@@ -1,0 +1,40 @@
+
+#Synchronizing changes
+
+$ git fetch [remote]
+Fetch changes from the remote, but not update tracking branches.
+$ git fetch --prune [remote]
+Delete remote Refs that were removed from the remote repository.
+$ git pull [remote]
+Fetch changes from the remote and merge current branch with its 
+upstream.
+$ git push [--tags] [remote]
+Push local changes to the remote. Use --tags to push tags.
+$ git push -u [remote] [branch]
+Push local branch to remote repository. Set its copy as an upstream.
+
+
+#For GNU/Linux distributions, Git should be available in the standard 
+system repository. For example, in Debian/Ubuntu please type in 
+the terminal:
+
+$ sudo apt-get install git
+If you need to install Git from source, you can get it from 
+git-scm.com/downloads.
+An excellent Git course can be found in the great Pro Git book by 
+Scott Chacon and Ben Straub. The book is available online for free 
+at git-scm.com/book
+
+Ignoring Files
+
+Ignoring Files
+Ignoring Files
+$ cat .gitignore
+/logs/*
+!logs/.gitkeep
+/tmp
+*.swp
+Verify the .gitignore file exists in your project and ignore certain type 
+of files, such as all files in logs directory (excluding the .gitkeep file), 
+whole tmp directory and all files *.swp. File ignoring will work for the 
+directory (and children directories) where .gitignore file is placed.
